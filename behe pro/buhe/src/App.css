@@ -1,0 +1,36 @@
+.App {
+  background: #141414;
+  color: brown;
+  height: 1200px;
+}
+
+.film-css >.row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+
+}
+.image-container {
+  position: relative;
+  transition: transform 0.3s;
+
+}
+.image-container:hover {
+cursor: pointer;
+transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0s ease;
+  bottom: 0;
+  opacity: 0;
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+
+}
+.image-container:hover >.overlay{
+  opacity: 1;
+}
